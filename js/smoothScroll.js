@@ -4,9 +4,9 @@ smothScrollElems.forEach(link => {
 	
 	link.addEventListener('click', (event) => {
 		event.preventDefault();
-		link.classList.toggle('active');
+		link.classList.add('active');
 		if(link.classList.contains('active')) {
-			link.classList.toggle('active');
+			link.classList.remove('active');
 			const id = link.getAttribute('href').substring(1);
 			document.getElementById(id).scrollIntoView({
 			behavior: 'smooth'
@@ -16,6 +16,7 @@ smothScrollElems.forEach(link => {
 		headerBerger.classList.remove('active');
 		headerMenu.classList.remove('active');
 		boDy.classList.remove('lock');
+		
 	});
 	
 });
