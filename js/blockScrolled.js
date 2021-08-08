@@ -16,7 +16,6 @@ const disabledScroll = () => {
 };
 
 
-
 const enabledScroll = () => {
 	document.body.style.cssText = '';
 	window.scroll({

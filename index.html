@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<title>portfolio</title>
@@ -49,10 +49,10 @@
 						<h1 class="main-title">Dmitry Lakhmitski</h1>
 						<h2 class="subtitle">Front-end developer<br>
 							38 years old, Brest</h2>
-						<div class="main-button">
-							<button class="leng ">RU</button>
+						<div class="main-button" id="google_translate_element">
+							<button class="leng language__img" data-google-lang="ru">RU</button>
 							<span>|</span>
-							<button class="leng active">ENG</button>
+							<button class="leng language__img" data-google-lang="en">ENG</button>
 						</div>
 						
 					</div>
@@ -162,7 +162,11 @@
 				</div>
 			</footer>
 		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/leng.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 </body>
-</body>
+
 
 </html>
