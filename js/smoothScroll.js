@@ -4,18 +4,19 @@ smothScrollElems.forEach(link => {
 	
 	link.addEventListener('click', (event) => {
 		event.preventDefault();
-		const id = link.getAttribute('href').substring(1);
-		document.getElementById(id).scrollIntoView({
+		link.classList.toggle('active');
+		if(link.classList.contains('active')) {
+			link.classList.toggle('active');
+			const id = link.getAttribute('href').substring(1);
+			document.getElementById(id).scrollIntoView({
 			behavior: 'smooth'
 		});
-		//const blockScroll = document.getElementById();
+		
+		}
 		headerBerger.classList.remove('active');
 		headerMenu.classList.remove('active');
 		boDy.classList.remove('lock');
-		if(link.classList.remove('active')) {
-			link.classList.add('active')
-		}
 	});
-
+	
 });
 
