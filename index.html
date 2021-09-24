@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 	<!--<link rel="stylesheet" href="css/style.css">-->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -49,19 +49,22 @@
 			<main class="main" id="home">
 				<div class="container">
 					<div class="main-container">
-						<h1 class="main-title">Dmitry Lakhmitski</h1>
-						<h2 class="subtitle">Front-end developer<br>
-							38 years old, Brest</h2>
-						<div class="main-button" id="google_translate_element">
-							<button class="leng language__img" data-google-lang="ru">RU</button>
-							<span>|</span>
-							<button class="leng language__img" data-google-lang="en">ENG</button>
+						<h1 class="main-title glitch" data-text="Dmitry Lakhmitski">Dmitry Lakhmitski</h1>
+						<div class="main__subtitle-container">
+							<h2 class="subtitle">Front-end developer<br>
+								38 years old, Brest</h2>
+							<div class="main-button" id="google_translate_element">
+								<button class="leng language__img" data-google-lang="ru">RU</button>
+								<span>|</span>
+								<button class="leng language__img" data-google-lang="en">ENG</button>
+							</div>
 						</div>
 						
 					</div>
 					<div class="main-image">
-						<img src="img/w.png" alt="photo">
+						<img src="img/w.png" data="data-hover" class="main__image" alt="photo">
 					</div>
+					
 				</div>
 			</main>
 			<section class="about" id="about">
@@ -129,12 +132,21 @@
 							<img src="img/desktop.png" alt="photo: desktop" width="900" height="610">
 						</div>
 						<a href="https://dimkabit.github.io/room/" target="blank" class="portfolio-text">Online store of rooms - Home page</a>
+						<a href="https://www.figma.com/file/6IIyKRsnahavWU2luDEDZw/Room?node-id=0%3A1" target="_blank" class="figma-text"><strong>Figma design</strong>: Online store of rooms - Home page.</a>
 					</div>
 					<div class="portfolio-container">
 						<div class="portfolio-frame">
-							<img src="img/DesktopT.png" alt="photo: travell" width="900" height="610">
+							<img src="img/interview.jpg" alt="photo: interview" width="900" height="610">
+						</div>
+						<a href="https://dimkabit.github.io/interview/" target="blank" class="portfolio-text">landing page with designer interview</a>
+						<a href="https://www.figma.com/file/OanjeBNKH8mKVH016BNWIk/interview?node-id=0%3A1" target="_blank" class="figma-text"><strong>Figma design</strong>: Landing page  with designer interview.</a>
+					</div>
+					<div class="portfolio-container">
+						<div class="portfolio-frame">
+							<img src="img/desktopT.png" alt="photo: travell" width="900" height="610">
 						</div>
 						<a href="https://dimkabit.github.io/travell/" target="blank" class="portfolio-text">Online travel - Home page</a>
+						<a href="https://www.figma.com/file/VHE03FqNLdFELl09gtA4Ui/Traveland?node-id=0%3A1" target="_blank" class="figma-text"><strong>Figma design</strong>: Online travel - Home page.</a>
 					</div>
 					<div class="portfolio-container">
 						<div class="portfolio-frame">
@@ -157,9 +169,9 @@
 					<a href="mailto:bit.82@mail.ru" class="footer-button"><span>Send message</span></a>
 					<div class="footer-list">
 						<ul class="footer-icon">
-							<li class="footer-link"><a href="https://t.me/Damitrij" target="blank"><img src="img/telegram.png" width="24" height="24" alt="icon: telegram"></a></li>
-							<li class="footer-link"><a href="https://linkedin.com/in/дмитрий-лахмицкий-19271a1a4" target="blank"><img src="img/linkedin.png" alt="icon: linkedin" width="24" height="24"></a></li>
-							<li class="footer-link"><a href="https://github.com/Dimkabit" target="blank"><svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="24" width="24">
+							<li class="footer-link button" id="button"><a href="https://t.me/Damitrij" class="swap" target="blank"><img src="img/telegram.png" width="24" height="24" alt="icon: telegram"></a></li>
+							<li class="footer-link" id="button"><a href="https://linkedin.com/in/дмитрий-лахмицкий-19271a1a4" target="blank"><img src="img/linkedin.png" alt="icon: linkedin" width="24" height="24"></a></li>
+							<li class="footer-link" id="button"><a href="https://github.com/Dimkabit" target="blank"><svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="24" width="24">
 								<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
 								</svg></a></li>
 							<li class="footer-link"><a href="https://jsfiddle.net/user/fiddles/public/" target="blank"><img src="img/jsfiddle-logo.png" alt="icon: jsfiddle"></a></li>
