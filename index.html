@@ -9,12 +9,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/script.min.js" defer></script>
+	<script src="./js/jquery-3.6.0.min.js" defer></script>
+	<script src="js/script.js" defer></script>
 	<script src="js/smoothScrool.min.js" defer></script>
 	<script src="js/blockScrolled.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
@@ -49,8 +50,8 @@
 			<main class="main" id="home">
 				<div class="container">
 					<div class="main-container">
-						<h1 class="main-title glitch" data-text="Dmitry Lakhmitski">Dmitry Lakhmitski</h1>
-						<div class="main__subtitle-container">
+						<div class="animated slideInLeft"><h1 class="main-title  glitch " data-text="Dmitry Lakhmitski">Dmitry Lakhmitski</h1></div>
+						<div class="main__subtitle-container animated fadeInRight">
 							<h2 class="subtitle">Front-end developer<br>
 								38 years old, Brest</h2>
 							<div class="main-button" id="google_translate_element">
@@ -100,24 +101,24 @@
 						<p class="scills-text">I work in such programs as</p>
 						<div class="scills-program">
 							<div class="scills-vs">
-								<a href="https://code.visualstudio.com/" target="blank"><img class="scills-vs__img" src="img/visual.png" alt="icon: vscode" width="89" height="89"></a>
-								<div class="scills-vs__title"><h3>Visual Studio Code</h3></div>
+								<a href="https://code.visualstudio.com/" rel="noreferrer" target="blank"><img class="scills-vs__img" src="img/visual.png" alt="icon: vscode" width="89" height="89"></a>
+								<div ><h3 class="scills-vs__title">Visual Studio Code</h3></div>
 								<div class="scills-vs__stars">
-									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166">
+									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166" height="27">
 								</div>
 							</div>
 							<div class="scills-vs">
-								<a href="https://www.figma.com/" target="blank"><img class="scills-vs__img" src="img/figma.png" alt="icon: figma" width="89" height="89"></a>
+								<a href="https://www.figma.com/" rel="noreferrer" target="blank"><img class="scills-vs__img" src="img/figma.png" alt="icon: figma" width="89" height="89"></a>
 								<div class="scills-vs__title"><h3>Figma</h3></div>
 								<div class="scills-vs__stars">
-									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166">
+									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166" height="27">
 								</div>
 							</div>
 							<div class="scills-vs">
-								<a href="https://developer.chrome.com/" target="blank"><img class="scills-vs__img" src="img/google.png" alt="icon: chrome" width="89" height="89"></a>
+								<a href="https://developer.chrome.com/" rel="noreferrer"  target="blank"><img class="scills-vs__img" src="img/google.png" alt="icon: chrome" width="89" height="89"></a>
 								<div class="scills-vs__title"><h3>Chrome DevTools</h3></div>
 								<div class="scills-vs__stars">
-									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166">
+									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166" height="27">
 								</div>
 							</div>
 						</div>
@@ -128,7 +129,7 @@
 				<div class="container">
 					<div class="portfolio-container">
 						<h2 class="portfolio-title">Portfolio</h2>
-						<div class="portfolio-frame">
+						<div class="portfolio-frame animated zumIn">
 							<figure class="effect-milo">
 								<img src="img/desktop.png" alt="photo: desktop" width="900" height="610">
 								<figcaption>
@@ -137,34 +138,34 @@
 								</figcaption>     
 							 </figure>
 						</div>
-						<a href="https://dimkabit.github.io/room/" target="blank" class="portfolio-text">Online store of rooms - Home page</a>
-						<a href="https://www.figma.com/file/6IIyKRsnahavWU2luDEDZw/Room?node-id=0%3A1" target="_blank" class="figma-text"><strong>Figma design</strong>: Online store of rooms - Home page.</a>
+						<a href="https://dimkabit.github.io/room/" rel="noreferrer" target="blank" class="portfolio-text">Online store of rooms - Home page</a>
+						<a href="https://www.figma.com/file/6IIyKRsnahavWU2luDEDZw/Room?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Online store of rooms - Home page.</a>
 					</div>
-					<div class="portfolio-container">
-						<div class="portfolio-frame">
+					<div class="portfolio-container ">
+						<div class="portfolio-frame animated third">
 							<img src="img/interview.jpg" alt="photo: interview" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/interview/" target="blank" class="portfolio-text">Landing page with designer interview</a>
-						<a href="https://www.figma.com/file/OanjeBNKH8mKVH016BNWIk/interview?node-id=0%3A1" target="_blank" class="figma-text"><strong>Figma design</strong>: Landing page  with designer interview.</a>
+						<a href="https://dimkabit.github.io/interview/" rel="noreferrer" target="blank" class="portfolio-text">Landing page with designer interview</a>
+						<a href="https://www.figma.com/file/OanjeBNKH8mKVH016BNWIk/interview?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Landing page  with designer interview.</a>
 					</div>
-					<div class="portfolio-container">
-						<div class="portfolio-frame">
+					<div class="portfolio-container ">
+						<div class="portfolio-frame animated first">
 							<img src="img/DesktopT.png" alt="photo: travell" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/travell/" target="blank" class="portfolio-text">Online travel - Home page</a>
-						<a href="https://www.figma.com/file/VHE03FqNLdFELl09gtA4Ui/Traveland?node-id=0%3A1" target="_blank" class="figma-text"><strong>Figma design</strong>: Online travel - Home page.</a>
+						<a href="https://dimkabit.github.io/travell/" rel="noreferrer" target="blank" class="portfolio-text">Online travel - Home page</a>
+						<a href="https://www.figma.com/file/VHE03FqNLdFELl09gtA4Ui/Traveland?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Online travel - Home page.</a>
 					</div>
 					<div class="portfolio-container">
-						<div class="portfolio-frame">
+						<div class="portfolio-frame animated zumIn">
 							<img src="img/venom.png" alt="photo: promo-venom" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/venom/venom/" target="blank" class="portfolio-text">Promo page moove Venom- Home page</a>
+						<a href="https://dimkabit.github.io/venom/venom/" rel="noreferrer" target="blank" class="portfolio-text">Promo page moove Venom- Home page</a>
 					</div>
 					<div class="portfolio-container">
 						<div class="portfolio-frame">
 							<img src="img/weather.png" alt="photo: weather app" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/weather/" target="blank" class="portfolio-text" >Online weather app(React, Redux, Axios) - Home page</a>
+						<a href="https://dimkabit.github.io/weather/" rel="noreferrer" target="blank" class="portfolio-text" >Online weather app(React, Redux, Axios) - Home page</a>
 					</div>
 				</div>
 			</section>
@@ -173,14 +174,14 @@
 					<div class="footer-title"><h3>Contacts</h3></div>
 					<div class="footer-text"><p>Want to know more or just chat?<br> You are welcome!</p></div>
 					<a href="mailto:bit.82@mail.ru" class="footer-button"><span>Send message</span></a>
-					<div class="footer-list">
+					<div class="footer-list animated second">
 						<ul class="footer-icon">
-							<li class="footer-link button" id="button"><a href="https://t.me/Damitrij" class="swap" target="blank"><img src="img/telegram.png" width="24" height="24" alt="icon: telegram"></a></li>
-							<li class="footer-link" id="button"><a href="https://linkedin.com/in/дмитрий-лахмицкий-19271a1a4" target="blank"><img src="img/linkedin.png" alt="icon: linkedin" width="24" height="24"></a></li>
-							<li class="footer-link" id="button"><a href="https://github.com/Dimkabit" target="blank"><svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="24" width="24">
+							<li class="footer-link button" id="button"><a href="https://t.me/Damitrij" rel="noreferrer" class="swap" target="blank"><img src="img/telegram.png" width="24" height="24" alt="icon: telegram"></a></li>
+							<li class="footer-link" id="button"><a href="https://linkedin.com/in/дмитрий-лахмицкий-19271a1a4" rel="noreferrer" target="blank"><img src="img/linkedin.png" alt="icon: linkedin" width="24" height="24"></a></li>
+							<li class="footer-link" id="button"><a href="https://github.com/Dimkabit" rel="noreferrer" target="blank"><svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="24" width="24">
 								<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
 								</svg></a></li>
-							<li class="footer-link"><a href="https://jsfiddle.net/user/fiddles/public/" target="blank"><img src="img/jsfiddle-logo.png" alt="icon: jsfiddle"></a></li>
+							<li class="footer-link"><a href="https://jsfiddle.net/user/fiddles/public/" rel="noreferrer" target="blank"><img src="img/jsfiddle-logo.png" alt="icon: jsfiddle" width="24" height="24"></a></li>
 						</ul>
 					</div>
 					<div class="footer-subtext">
