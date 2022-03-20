@@ -16,8 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="./js/jquery-3.6.0.min.js" defer></script>
 	<script src="js/script.js" defer></script>
+	<script src="js/rating.js" defer></script>
 	<script src="js/smoothScrool.min.js" defer></script>
-	<script src="js/blockScrolled.min.js"></script>
+	<script src="js/blockScrolled.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" defer></script>
 	<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit" defer></script>
@@ -59,12 +60,10 @@
 								<button class="leng language__img" data-google-lang="en">ENG</button>
 							</div>
 						</div>
-						
 					</div>
 					<div class="main-image">
-						<img src="img/w.png" class="main__image" alt="photo">
+						<img class="image-main" src="img/w.png"  alt="photo">
 					</div>
-					
 				</div>
 			</main>
 			<section class="about" id="about">
@@ -73,9 +72,10 @@
 						<h3 class="about-title">About me</h3>
 						<div class="about-text">
 							<p>Hi, I'm Dimitry – Front-end developer from Brest. I'm interested in Front-end and everything connected with it.
+								Adaptive, responsive, cross-browser layout of web pages, landing pages, product cards, correction and refinement of existing web pages
 							</p>
 							<p>Completed  training at courses "Front-end/js developer" in The Rolling Scopes School <a href="https://rs.school/js/" target="blank"><strong>(RS School(epam))</strong></a>.</p>
-							<p>Ready to implement excellent projects with wonderful people.</p>
+							<p>Ready to implement excellent projects with wonderful people (ready for training and tests).</p>
 						</div>
 					</div>
 				</div>
@@ -94,7 +94,7 @@
 								<li class="list"><span>Testing</span> - elementary</li>
 								<li class="list">Responsive design</li>
 								<li class="list">Cross browser compatible websites</li>
-								<li class="list"><strong>Languages</strong>: <strong>English</strong> (A2 - Pre-Intermediate),<br> <strong>Polish</strong> (C1 - Advanced), <strong>Russian</strong> (Native)								</li>
+								<li class="list"><strong>Languages</strong>: <strong>English</strong> (B1 - Pre-Intermediate),<br> <strong>Polish</strong> (C1 - Advanced), <strong>Russian</strong> (Native)								</li>
 							</ul>
 						</div>
 						<p class="scills-text">I work with programs as</p>
@@ -102,22 +102,52 @@
 							<div class="scills-vs">
 								<a href="https://code.visualstudio.com/" rel="noreferrer" target="blank"><img class="scills-vs__img" src="img/visual.png" alt="icon: vscode" width="89" height="89"></a>
 								<div ><h3 class="scills-vs__title">Visual Studio Code</h3></div>
-								<div class="scills-vs__stars">
-									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166" height="27">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">4.65</div>
 								</div>
 							</div>
 							<div class="scills-vs">
 								<a href="https://www.figma.com/" rel="noreferrer" target="blank"><img class="scills-vs__img" src="img/figma.png" alt="icon: figma" width="89" height="89"></a>
 								<div class="scills-vs__title"><h3>Figma</h3></div>
-								<div class="scills-vs__stars">
-									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166" height="27">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">4.7</div>
 								</div>
 							</div>
 							<div class="scills-vs">
 								<a href="https://developer.chrome.com/" rel="noreferrer"  target="blank"><img class="scills-vs__img" src="img/google.png" alt="icon: chrome" width="89" height="89"></a>
 								<div class="scills-vs__title"><h3>Chrome DevTools</h3></div>
-								<div class="scills-vs__stars">
-									<img src="img/icons/bg_rating_active.svg" alt="icon: rating stars" width="166" height="27">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">4.45</div>
 								</div>
 							</div>
 						</div>
@@ -130,17 +160,41 @@
 						<h2 class="portfolio-title">Portfolio</h2>
 						<div class="portfolio-container ">
 							<div class="portfolio-frame animated third">
+								<img src="img/clever.jpg" alt="photo: tau-shop" width="900" height="610">
+							</div>
+							<div class="portfolio-information">
+								<p class="zlat">Designed in figma.<br> Applied technologies: React, React Router, Redux Toolkit. html, css, scss (Grid, FlexBox, :hover effects, transition) responsive design.</p>
+								<div class="portfolio-text"><a href="https://dimkabit.github.io/magazin/" rel="noreferrer" target="blank" class="portfolio-link">Online store certified knives.</a></div>
+								<div class="figma-text"><a href="https://www.figma.com/file/2EY9ErzKPZ7AnvAcIamjDF/clevertec-SHOP?node-id=1%3A12" rel="noreferrer" target="blank" class="figma-link"><strong>Figma design</strong>: Online store clothes.</a></div>
+							</div>
+						</div>
+						<div class="portfolio-container ">
+							<div class="portfolio-frame animated third">
+								<img src="img/zlat.jpg" alt="photo: tau-shop" width="900" height="610">
+							</div>
+							<div class="portfolio-information">
+								<p class="zlat">Designed in figma.<br> Applied technologies: html, css(Grid, FlexBox, :hover effects, transition),<br> JavaScript(interactivity of the burger menu, smoothScroll, tooltips, spoiller) responsive design.</p>
+								<div class="portfolio-text"><a href="https://dimkabit.github.io/magazin/" rel="noreferrer" target="blank" class="portfolio-link">Online store certified knives.</a></div>
+								<div class="figma-text"><a href="https://www.figma.com/file/jS1h1nkqdocH4sefaXVseg/zlatmax?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-link"><strong>Figma design</strong>: Online store certified knives.</a></div>
+							</div>
+						</div>
+						<div class="portfolio-container ">
+							<div class="portfolio-frame animated third">
 								<img src="img/tatu.jpg" alt="photo: tau-shop" width="900" height="610">
 							</div>
-							<a href="https://dimkabit.github.io/tatu/" rel="noreferrer" target="blank" class="portfolio-text">Online store MR. DRISKELL</a>
-							<a href="https://www.figma.com/file/FjS7kOgO9MD43bgF8TIC0W/Adaptiv-(Copy)-(Copy)?node-id=343%3A6248" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Online store MR. DRISKELL.</a>
+							<div class="portfolio-information">
+								<div class="portfolio-text"><a href="https://dimkabit.github.io/tatu/" rel="noreferrer" target="blank" class="portfolio-link">Online store MR. DRISKELL</a></div>
+								<div class="figma-text"><a href="https://www.figma.com/file/FjS7kOgO9MD43bgF8TIC0W/Adaptiv-(Copy)-(Copy)?node-id=343%3A6248" rel="noreferrer" target="blank" class="figma-link"><strong>Figma design</strong>: Online store MR. DRISKELL.</a></div>
+							</div>
 						</div>
 						<div class="portfolio-container ">
 							<div class="portfolio-frame animated third">
 								<img src="img/screen.png" alt="photo: interview" width="900" height="610">
 							</div>
-							<a href="https://dimkabit.github.io/shelter/index.html" rel="noreferrer" target="blank" class="portfolio-text">Landing page with Shelter pets</a>
-							<a href="https://www.figma.com/file/0WId8AIhv9igD893Tddpic/shelter-dom-(Copy)?node-id=94%3A43" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Landing page  with Shelter pets.</a>
+							<div class="portfolio-information">							
+								<div class="portfolio-text"><a href="https://dimkabit.github.io/shelter/index.html" rel="noreferrer" target="blank" class="portfolio-link">Landing page with Shelter pets</a></div>
+								<div class="figma-text"><a href="https://www.figma.com/file/0WId8AIhv9igD893Tddpic/shelter-dom-(Copy)?node-id=94%3A43" rel="noreferrer" target="blank" class="figma-link"><strong>Figma design</strong>: Landing page  with Shelter pets.</a></div>
+							</div>
 						</div>
 						<div class="portfolio-frame animated zumIn">
 							<figure class="effect-milo">
@@ -151,34 +205,45 @@
 								</figcaption>     
 							 </figure>
 						</div>
-						<a href="https://dimkabit.github.io/room/" rel="noreferrer" target="blank" class="portfolio-text">Online store of rooms - Home page</a>
-						<a href="https://www.figma.com/file/6IIyKRsnahavWU2luDEDZw/Room?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Online store of rooms - Home page.</a>
+						<div class="portfolio-information">
+							<div class="portfolio-text"><a href="https://dimkabit.github.io/room/" rel="noreferrer" target="blank" class="portfolio-link">Online store of rooms - Home page</a></div>
+							<div class="figma-text"><a href="https://www.figma.com/file/6IIyKRsnahavWU2luDEDZw/Room?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-link"><strong>Figma design</strong>: Online store of rooms - Home page.</a></div>
+						</div>
 					</div>
 					<div class="portfolio-container ">
 						<div class="portfolio-frame animated third">
 							<img src="img/interview.jpg" alt="photo: interview" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/interview/" rel="noreferrer" target="blank" class="portfolio-text">Landing page with designer interview</a>
-						<a href="https://www.figma.com/file/OanjeBNKH8mKVH016BNWIk/interview?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Landing page  with designer interview.</a>
+						<div class="portfolio-information">
+							<div class="portfolio-text"><a href="https://dimkabit.github.io/interview/" rel="noreferrer" target="blank" class="portfolio-link">Landing page with designer interview</a></div>
+							<div class="figma-text"></div><a href="https://www.figma.com/file/OanjeBNKH8mKVH016BNWIk/interview?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-link"><strong>Figma design</strong>: Landing page  with designer interview.</a>
+						</div>
 					</div>
 					<div class="portfolio-container ">
 						<div class="portfolio-frame animated first">
 							<img src="img/DesktopT.png" alt="photo: travell" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/travell/" rel="noreferrer" target="blank" class="portfolio-text">Online travel - Home page</a>
-						<a href="https://www.figma.com/file/VHE03FqNLdFELl09gtA4Ui/Traveland?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-text"><strong>Figma design</strong>: Online travel - Home page.</a>
+						<div class="portfolio-information">
+							<div class="portfolio-text"><a href="https://dimkabit.github.io/travell/" rel="noreferrer" target="blank" class="portfolio-link">Online travel - Home page</a></div>
+							<div class="figma-text"></div><a href="https://www.figma.com/file/VHE03FqNLdFELl09gtA4Ui/Traveland?node-id=0%3A1" rel="noreferrer" target="blank" class="figma-link"><strong>Figma design</strong>: Online travel - Home page.</a>
+						</div>
 					</div>
 					<div class="portfolio-container">
 						<div class="portfolio-frame animated zumIn">
 							<img src="img/venom.png" alt="photo: promo-venom" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/venom/venom/" rel="noreferrer" target="blank" class="portfolio-text">Promo page moove Venom- Home page</a>
+						<div class="portfolio-information">
+							<div class="portfolio-text"><a href="https://dimkabit.github.io/venom/venom/" rel="noreferrer" target="blank" class="portfolio-link">Promo page moove Venom- Home page</a></div>
+						</div>
 					</div>
 					<div class="portfolio-container">
 						<div class="portfolio-frame">
 							<img src="img/weather.png" alt="photo: weather app" width="900" height="610">
 						</div>
-						<a href="https://dimkabit.github.io/weather/" rel="noreferrer" target="blank" class="portfolio-text" >Online weather app(React, Redux, Axios) - Home page</a>
+						<div class="portfolio-information">
+							<p class="zlat">Designed in figma.<br> Applied technologies:React, Redux, Axios, html, css, scss( FlexBox ) responsive design.</p>
+							<div class="portfolio-text"><a href="https://dimkabit.github.io/weather/" rel="noreferrer" target="blank" class="portfolio-link" >Online weather app - Home page</a></div>
+						</div>
 					</div>
 				</div>
 			</section>
