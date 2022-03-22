@@ -1085,16 +1085,20 @@ p.zlat {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.0625rem;
-  line-height: 1.29412em;
+  font-size: 1.125rem;
+  line-height: 1.17647em;
   color: #070707;
+}
+
+a.portfolio-link, a.figma-link {
+  font-size: clamp(1rem, 1vw, 1.125rem);
 }
 
 .portfolio-link, .figma-link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 26.875rem;
+  min-width: 24.375rem;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
