@@ -1,14 +1,9 @@
 @charset "UTF-8";
 .rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   font-size: 40px;
   line-height: 0.75;
-  -webkit-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
 }
 
@@ -51,8 +46,6 @@
 }
 
 .rating__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 100%;
@@ -62,9 +55,7 @@
 }
 
 .rating__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
+  flex: 0 0 20%;
   height: 100%;
   opacity: 0;
 }

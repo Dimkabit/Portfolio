@@ -21,12 +21,10 @@ ol.counter {
   list-style-type: none;
   counter-reset: item;
 }
-
 ol.counter li {
   position: relative;
   padding: 0px 0px 0px 45px;
 }
-
 ol.counter li:before {
   counter-increment: item;
   content: counter(item);
@@ -71,7 +69,6 @@ ol.counter li:before {
 .cell {
   display: table-cell;
 }
-
 .cell.full {
   width: 100%;
 }
@@ -79,7 +76,6 @@ ol.counter li:before {
 .ibg {
   position: relative;
 }
-
 .ibg img {
   position: absolute;
   width: 100%;
@@ -95,7 +91,6 @@ body.ie .ibg {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 body.ie .ibg img {
   width: 0;
   height: 0;
@@ -109,7 +104,6 @@ body.ie .ibg img {
   height: 0;
   padding-bottom: 56.25%;
 }
-
 .video video,
 .video iframe,
 .video object,
@@ -133,8 +127,7 @@ body.ie .ibg img {
   width: auto;
   height: auto;
   z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   background-size: cover;
 }
 
@@ -145,27 +138,21 @@ body.ie .ibg img {
 .moretext__more {
   cursor: pointer;
 }
-
 .moretext__more span {
   font-style: normal;
 }
-
 .moretext__more span:first-child {
   display: block;
 }
-
 .moretext__more span:last-child {
   display: none;
 }
-
 .moretext__more.active span {
   font-style: normal;
 }
-
 .moretext__more.active span:first-child {
   display: none;
 }
-
 .moretext__more.active span:last-child {
   display: block;
 }
@@ -187,39 +174,31 @@ body.ie .ibg img {
 .slick-slider {
   position: relative;
 }
-
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-
 .slick-slider .slick-list {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
-
 .slick-slider .slick-track {
   position: relative;
   width: 100%;
 }
-
 .slick-slider .slick-slide {
   position: relative;
 }
-
 .tab__item {
   display: none;
 }
-
 .tab__item.active {
   display: block;
 }
 
 .mirror {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 
 .nicescroll-rails {
@@ -235,11 +214,9 @@ body.ie .ibg img {
   right: -7px !important;
   bottom: 80px !important;
 }
-
 .baloon button {
   display: none !important;
 }
-
 .baloon:after {
   display: none !important;
 }
@@ -257,12 +234,10 @@ body.ie .ibg img {
   width: 100% !important;
   overflow: visible !important;
 }
-
 .baloon-content.gm-style-iw > .gm-style-iw-d {
   overflow: hidden !important;
   max-width: none !important;
 }
-
 .baloon-content.gm-style-iw:after {
   display: none !important;
 }

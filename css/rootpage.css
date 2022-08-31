@@ -5,7 +5,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -35,18 +34,16 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
-  font: 14px/14px "HelveticaMonospacedW01",Monaco,Consolas,"Lucida Console",monospace;
+  font: 14px/14px "HelveticaMonospacedW01", Monaco, Consolas, "Lucida Console", monospace;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
 body.lock {
   overflow: hidden;
 }
-
 body.scrollblock:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -87,32 +84,26 @@ img {
 .rootpage {
   padding: 30px;
 }
-
 .rootpage h1 {
   margin: 0px 0px 20px 0px;
 }
-
 .rootpage h2 {
   margin: 0px 0px 15px 0px;
 }
-
 .rootpage ol {
   margin: 0px 0px 20px 0px;
   list-style: none;
   list-style-type: none;
   counter-reset: item;
 }
-
 .rootpage ol li {
   margin: 0px 0px 10px 0px;
   position: relative;
   padding: 0px 0px 0px 15px;
 }
-
 .rootpage ol li:last-child {
   margin: 0px 0px 0px 0px;
 }
-
 .rootpage ol li:before {
   content: counter(item) ".";
   counter-increment: item;
@@ -120,11 +111,9 @@ img {
   left: 0;
   top: 0;
 }
-
 .rootpage a {
   color: #000;
 }
-
 .rootpage a:hover {
   text-decoration: underline;
 }

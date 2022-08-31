@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .webui-popover-content {
   display: none;
 }
@@ -60,28 +61,21 @@
 }
 
 .webui-popover.pop {
-  -webkit-transform: scale(0.8);
   transform: scale(0.8);
-  -webkit-transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
-  -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
-  transition: -webkit-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
   transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
-  transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5), -webkit-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
 .webui-popover.pop-out {
-  -webkit-transition: .15s linear;
-  transition: .15s linear;
+  transition: 0.15s linear;
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
 .webui-popover.fade,
 .webui-popover.fade-out {
-  -webkit-transition: opacity .15s linear;
-  transition: opacity .15s linear;
+  transition: opacity 0.15s linear;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -92,7 +86,6 @@
 }
 
 .webui-popover.in {
-  -webkit-transform: none;
   transform: none;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -117,21 +110,21 @@
   line-height: 16px;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  opacity: .2;
+  opacity: 0.2;
   filter: alpha(opacity=20);
   text-decoration: none;
 }
 
 .webui-popover-inner .close:hover,
 .webui-popover-inner .close:focus {
-  opacity: .5;
+  opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
 .webui-popover-inner .close:after {
-  content: "\00D7";
-  width: .8em;
-  height: .8em;
+  content: "×";
+  width: 0.8em;
+  height: 0.8em;
   padding: 4px;
   position: relative;
 }
@@ -342,14 +335,11 @@
     -webkit-transform: rotate(360deg);
   }
 }
-
 @keyframes rotate {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 .webui-popover-backdrop {
   background-color: rgba(0, 0, 0, 0.65);
   width: 100%;
@@ -365,7 +355,6 @@
   position: relative;
   top: 0;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   float: none;
 }
